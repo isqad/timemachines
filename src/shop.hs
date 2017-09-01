@@ -31,5 +31,9 @@ data TimeMachine = FutureJourney Manufacturer Integer Price
 data Manufacturer = Manufacturer Client
   deriving Show
 
-data Price = Price Double String
+data Price = Price Double Currency
   deriving Show
+
+data Currency = Currency String
+  deriving Show
+
